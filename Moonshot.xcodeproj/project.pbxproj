@@ -15,6 +15,8 @@
 		DA2B698C24730AE1003CD939 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2B698B24730AE1003CD939 /* Preview Assets.xcassets */; };
 		DA2B698F24730AE1003CD939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2B698D24730AE1003CD939 /* LaunchScreen.storyboard */; };
 		DA2B699A24730AE1003CD939 /* MoonshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B699924730AE1003CD939 /* MoonshotTests.swift */; };
+		DA9393A924731911009ABF30 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9393A824731911009ABF30 /* astronauts.json */; };
+		DA9393AB2473191E009ABF30 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9393AA2473191E009ABF30 /* missions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		DA2B699524730AE1003CD939 /* MoonshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2B699924730AE1003CD939 /* MoonshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotTests.swift; sourceTree = "<group>"; };
 		DA2B699B24730AE1003CD939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9393A824731911009ABF30 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		DA9393AA2473191E009ABF30 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				DA2B698324730ADF003CD939 /* Moonshot.xcdatamodeld */,
+				DA9393A824731911009ABF30 /* astronauts.json */,
+				DA9393AA2473191E009ABF30 /* missions.json */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2B698F24730AE1003CD939 /* LaunchScreen.storyboard in Resources */,
+				DA9393AB2473191E009ABF30 /* missions.json in Resources */,
 				DA2B698C24730AE1003CD939 /* Preview Assets.xcassets in Resources */,
 				DA2B698924730AE1003CD939 /* Assets.xcassets in Resources */,
+				DA9393A924731911009ABF30 /* astronauts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
