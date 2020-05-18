@@ -81,14 +81,12 @@
 		DA2B697E24730ADF003CD939 /* Moonshot */ = {
 			isa = PBXGroup;
 			children = (
+				DA2B69A624730F48003CD939 /* Resources */,
+				DA2B69A524730F41003CD939 /* DataLayer */,
+				DA2B69A424730F2E003CD939 /* ViewLayer */,
 				DA2B697F24730ADF003CD939 /* AppDelegate.swift */,
 				DA2B698124730ADF003CD939 /* SceneDelegate.swift */,
-				DA2B698624730ADF003CD939 /* ContentView.swift */,
-				DA2B698824730AE1003CD939 /* Assets.xcassets */,
-				DA2B698D24730AE1003CD939 /* LaunchScreen.storyboard */,
 				DA2B699024730AE1003CD939 /* Info.plist */,
-				DA2B698324730ADF003CD939 /* Moonshot.xcdatamodeld */,
-				DA2B698A24730AE1003CD939 /* Preview Content */,
 			);
 			path = Moonshot;
 			sourceTree = "<group>";
@@ -108,6 +106,32 @@
 				DA2B699B24730AE1003CD939 /* Info.plist */,
 			);
 			path = MoonshotTests;
+			sourceTree = "<group>";
+		};
+		DA2B69A424730F2E003CD939 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DA2B698624730ADF003CD939 /* ContentView.swift */,
+				DA2B698D24730AE1003CD939 /* LaunchScreen.storyboard */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		DA2B69A524730F41003CD939 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DA2B698324730ADF003CD939 /* Moonshot.xcdatamodeld */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		DA2B69A624730F48003CD939 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA2B698A24730AE1003CD939 /* Preview Content */,
+				DA2B698824730AE1003CD939 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,7 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Moonshot/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Moonshot/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Moonshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,7 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Moonshot/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Moonshot/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Moonshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
