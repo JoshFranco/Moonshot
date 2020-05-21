@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
-    let missions: [Mission] = Bundle.main.decode("missions.json")
+    @State private var showingDateInfo = true
+    
+    let missions: [Mission] = AstronautService.shared.knownMissions
+    
     
     // MARK: - Body
     var body: some View {
@@ -24,11 +26,35 @@ struct ContentView: View {
                     VStack(alignment: .leading) {
                         Text(mission.displayName)
                             .font(.headline)
-                        Text(mission.formattedLaunchDate)
+                        
+                        if self.showingDateInfo {
+                            Text(mission.formattedLaunchDate)
+                                .transition(.opacity)
+                        } else {
+                            ForEach(mission.crew, id: \.name) { crewMember in
+                                HStack {
+                                    Text("\(crewMember.role):")
+                                    Spacer()
+                                    Text(crewMember.name.capitalized)
+                                }
+                                .transition(.slide)
+                            }
+                        }
+                        
+                        
                     }
                 }
             }
             .navigationBarTitle("Moonshot")
+            .navigationBarItems(trailing:
+                Button(action: {
+                    withAnimation {
+                        self.showingDateInfo.toggle()
+                    }
+                }) {
+                    Image(systemName: showingDateInfo ? "person.and.person": "calendar")
+                }
+            )
         }
     }
 }
